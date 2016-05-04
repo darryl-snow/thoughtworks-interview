@@ -1,23 +1,24 @@
 /*
- * HomePage
- * This is the first thing users see of our App
+ * AgentsList
+ * This is the component used for filtering the list of agents.
  */
-
-import { asyncChangeProjectName, asyncChangeOwnerName } from '../../actions/AppActions';
+import { changeAgentsList } from '../actions/AppActions';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 
-class HomePage extends Component {
+class AgentsList extends Component {
+
   render() {
+
     const dispatch = this.props.dispatch;
-    const { projectName, ownerName } = this.props.data;
+
     return (
-      <div>
-        <h2>Home</h2>
+      <div className="u-clearfix">
+        AgentsList
       </div>
     );
   }
+
 }
 
 // REDUX STUFF
@@ -30,4 +31,4 @@ function select(state) {
 }
 
 // Wrap the component to inject dispatch and state into it
-export default connect(select)(HomePage);
+export default connect(select)(AgentsList);

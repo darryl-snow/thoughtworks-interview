@@ -44,7 +44,6 @@ openSansObserver.check().then(() => {
 });
 
 // Import the pages
-import HomePage from './components/pages/HomePage.react';
 import Dashboard from './components/pages/Dashboard.react';
 import MyCruise from './components/pages/MyCruise.react';
 import Agents from './components/pages/Agents.react';
