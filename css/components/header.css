@@ -1,0 +1,13 @@
+
+
+@media(min-width: 1024px) {
+
+  .c-header {
+    height: 2rem;
+  }
+
+  .c-header__heading {
+    transform: translateY(1.25rem);
+  }
+
+}

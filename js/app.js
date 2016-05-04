@@ -27,7 +27,7 @@ if ('serviceWorker' in navigator) {
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, Route } from 'react-router';
+import { Router, Route, IndexRoute, IndexRedirect } from 'react-router';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import FontFaceObserver from 'fontfaceobserver';
@@ -45,7 +45,10 @@ openSansObserver.check().then(() => {
 
 // Import the pages
 import HomePage from './components/pages/HomePage.react';
-import ReadmePage from './components/pages/ReadmePage.react';
+import Dashboard from './components/pages/Dashboard.react';
+import MyCruise from './components/pages/MyCruise.react';
+import Agents from './components/pages/Agents.react';
+import Help from './components/pages/Help.react';
 import NotFoundPage from './components/pages/NotFound.react';
 import App from './components/App.react';
 
@@ -71,9 +74,11 @@ if (module.hot) {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={createHistory()}>
-      <Route component={App}>
-        <Route path="/" component={HomePage} />
-        <Route path="/readme" component={ReadmePage} />
+      <Route path="/" component={App}>
+        <IndexRoute component={Dashboard} />
+        <Route path="my-cruise" component={MyCruise} />
+        <Route path="agents" component={Agents} />
+        <Route path="help" component={Help} />
         <Route path="*" component={NotFoundPage} />
       </Route>
     </Router>

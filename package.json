@@ -1,7 +1,7 @@
 {
-  "name": "reactjs-boilerplate",
+  "name": "thoughtworks-interview",
   "version": "2.4.0",
-  "description": "Quick setup for new React.js applications featuring Redux, hot–reloading, PostCSS, react-router and Mocha.",
+  "description": "Dashboard interface using React.js, Redux, hot–reloading, PostCSS, react-router and Mocha.",
   "dependencies": {
     "fontfaceobserver": "^1.5.1",
     "history": "1.17.0",

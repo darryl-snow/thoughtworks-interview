@@ -1,4 +1,4 @@
-var CACHE_NAME = 'react-boilerplate-cache-v1';
+var CACHE_NAME = 'thoughtworks-interview-cache-v1';
 // The files we want to cache
 var urlsToCache = [
   '/',
