@@ -3,6 +3,7 @@
   "version": "2.4.0",
   "description": "Dashboard interface using React.js, Redux, hot–reloading, PostCSS, react-router and Mocha.",
   "dependencies": {
+    "dom-shims": "^0.1.4",
     "fontfaceobserver": "^1.5.1",
     "history": "1.17.0",
     "react": "^0.14.2",

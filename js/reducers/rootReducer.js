@@ -5,9 +5,9 @@
 
 import agentsReducer from './agentsReducer';
 
-// Replace line below once you have several reducers with
+// If there's more than 1 reducer:
 // import { combineReducers } from 'redux';
-// const rootReducer = combineReducers({ agentsReducer, yourReducer })
+// const rootReducer = combineReducers({ agentsReducer, myReducer })
 const rootReducer = agentsReducer;
 
 export default rootReducer;

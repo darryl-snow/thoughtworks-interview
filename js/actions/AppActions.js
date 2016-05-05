@@ -27,8 +27,12 @@
 // It makes more sense to have the asnyc actions before the non-async ones
 /* eslint-disable no-use-before-define */
 
-import { CHANGE_FILTER } from '../constants/AppConstants';
+import { CHANGE_FILTER, UPDATE_RESOURCES } from '../constants/AppConstants';
 
 export function changeFilter(filter) {
   return { type: CHANGE_FILTER, filter };
+}
+
+export function updateResources(agents) {
+  return { type: UPDATE_RESOURCES, agents };
 }

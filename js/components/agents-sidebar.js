@@ -11,27 +11,27 @@ class AgentsSidebar extends Component {
   render() {
 
     const dispatch = this.props.dispatch;
-    let building = this.props.data.agents.filter((agent) => { return agent.status === "building"; }).length;
-    let idle = this.props.data.agents.filter((agent) => { return agent.status === "idle"; }).length;
+    let building = this.props.data.agents.filter((agent) => { return agent.status === 'building'; }).length;
+    let idle = this.props.data.agents.filter((agent) => { return agent.status === 'idle'; }).length;
     let historicalAgents = this.props.data.historicalAgents.map((agent, index) => {
       return(
-        <li key={index} className="mb-3">{agent}</li>
+        <li key={index} className='mb-3'>{agent}</li>
       )
     });
 
     return (
       <div>
 
-        <h3 className="mb-3">Summary</h3>
+        <h3 className='mb-3'>Summary</h3>
 
-        <ul className="u-unstyled-list">
-          <li className="mb-3">building: {building}</li>
-          <li className="mb-3">idle: {idle}</li>
+        <ul className='u-unstyled-list'>
+          <li className='mb-3'>building: {building}</li>
+          <li className='mb-3'>idle: {idle}</li>
         </ul>
 
-        <h3 className="mb-3 mt-3">History</h3>
+        <h3 className='mb-3 mt-3'>History</h3>
 
-        <ul className="u-unstyled-list">
+        <ul className='u-unstyled-list'>
           {historicalAgents}
         </ul>
 

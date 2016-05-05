@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 class Dashboard extends Component {
   render() {
     return (
-      <div className="p-3">
+      <div className='p-3'>
         <h2>Dashboard</h2>
       </div>
     );

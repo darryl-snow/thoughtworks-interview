@@ -1,3 +1,8 @@
+/* Image components
+ *
+ * Images are always vertical and horizontal centred and
+ * never exceed the width of their containers.
+ */
 .c-image {
   height: auto;
   left: 50%;
@@ -7,6 +12,7 @@
   top: 50%;
 }
 
+/* Circle image */
 .c-image--rounded {
   border-radius: 50%;
 }

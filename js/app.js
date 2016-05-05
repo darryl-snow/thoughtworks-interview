@@ -14,11 +14,13 @@ import 'file?name=[name].[ext]!../.htaccess';
 
 // Check for ServiceWorker support before trying to install it
 if ('serviceWorker' in navigator) {
+
   navigator.serviceWorker.register('/serviceworker.js').then(() => {
     // Registration was successful
   }).catch(() => {
     // Registration failed
   });
+
 } else {
   // No ServiceWorker Support
 }
@@ -32,6 +34,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import FontFaceObserver from 'fontfaceobserver';
 import createHistory from 'history/lib/createBrowserHistory';
+import DomShims from 'dom-shims';
 
 // Observer loading of Open Sans (to remove open sans, remove the <link> tag in the index.html file and this observer)
 const openSansObserver = new FontFaceObserver('Open Sans', {});
@@ -62,10 +65,12 @@ const store = createStoreWithMiddleware(rootReducer);
 
 // Make reducers hot reloadable, see http://stackoverflow.com/questions/34243684/make-redux-reducers-and-other-non-components-hot-loadable
 if (module.hot) {
+
   module.hot.accept('./reducers/rootReducer', () => {
     const nextRootReducer = require('./reducers/rootReducer').default;
     store.replaceReducer(nextRootReducer);
   });
+
 }
 
 // Mostly boilerplate, except for the Routes. These are the pages you can go to,
@@ -73,12 +78,12 @@ if (module.hot) {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={createHistory()}>
-      <Route path="/" component={App}>
+      <Route path='/' component={App}>
         <IndexRoute component={Dashboard} />
-        <Route path="my-cruise" component={MyCruise} />
-        <Route path="agents" component={Agents} />
-        <Route path="help" component={Help} />
-        <Route path="*" component={NotFoundPage} />
+        <Route path='my-cruise' component={MyCruise} />
+        <Route path='agents' component={Agents} />
+        <Route path='help' component={Help} />
+        <Route path='*' component={NotFoundPage} />
       </Route>
     </Router>
   </Provider>,

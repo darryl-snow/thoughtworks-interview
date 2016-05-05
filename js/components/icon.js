@@ -8,12 +8,13 @@ class Icon extends Component {
 
     return (
 
-      <svg className={"c-icon c-icon--"+ name} viewBox="0 0 32 32">
-        <use xlinkHref={"#icon--"+ name}></use>
+      <svg className={'c-icon c-icon--'+ name} viewBox='0 0 32 32'>
+        <use xlinkHref={'#icon--'+ name}></use>
       </svg>
 
     );
   }
+
 }
 
 Icon.propTypes = {

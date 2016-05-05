@@ -1,3 +1,4 @@
+/* Make sure there's always some side-padding around containers. */
 .container {
   max-width: 90%;
 }

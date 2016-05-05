@@ -1,4 +1,5 @@
-
+/* The main page header - it only has fixed height and is pushed
+down on larger screens. */
 
 @media(min-width: 1024px) {
 

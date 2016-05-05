@@ -17,11 +17,11 @@ class Agents extends Component {
     return (
       <div>
         <Filter />
-        <div className="c-agents-page u-clearfix">
-          <div className="c-agents-list">
+        <div className='c-agents-page u-clearfix'>
+          <div className='c-agents-list'>
             <AgentsList />
           </div>
-          <div className="c-agents-sidebar">
+          <div className='c-agents-sidebar'>
             <AgentsSidebar />
           </div>
         </div>

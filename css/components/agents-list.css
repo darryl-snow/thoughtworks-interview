@@ -1,5 +1,7 @@
+/* The main agents list is full screen width until 1024px,
+then becomes 80% width to leave room for the sidebar. */
+
 .c-agents-list {
-  overflow: hidden;
   padding-bottom: 0.5rem;
 }
 
@@ -13,10 +15,10 @@
 
 }
 
+/* Encapsulate agent list items */
 .c-agents-list__item {
   border: 1px solid #dddddd;
   border-radius: 0.3em;
   min-height: 3rem;
   margin-bottom: 1rem;
-  overflow: hidden;
 }

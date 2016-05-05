@@ -1,32 +1,50 @@
 import expect from 'expect';
-import { changeOwnerName, changeProjectName } from '../js/actions/AppActions';
-import { CHANGE_OWNER_NAME, CHANGE_PROJECT_NAME } from '../js/constants/AppConstants';
+import { changeFilter, updateResources } from '../js/actions/AppActions';
+import { CHANGE_FILTER, UPDATE_RESOURCES } from '../js/constants/AppConstants';
 
 // Test actions from AppActions.js
 describe('AppActions', () => {
-  // Test changeOwnerName action
-  describe('changeOwnerName', () => {
-    it('should change the owner name', () => {
-      const name = 'samsmith';
+
+  describe('changeFilter', () => {
+
+    it('should change the active filter', () => {
+
+      const filter = 'physical';
+
       const expectedResult = {
-        type: CHANGE_OWNER_NAME,
-        name
+        type: CHANGE_FILTER,
+        filter
       };
 
-      expect(changeOwnerName(name)).toEqual(expectedResult);
-    });
+      expect(changeFilter(filter)).toEqual(expectedResult);
+
+    })
+
   });
 
   // Test changeProjectName action
-  describe('changeProjectName', () => {
-    it('should change the project name', () => {
-      const name = 'Webapplication Boilerplate';
+  describe('updateResources', () => {
+
+    it('should update the resources for an agent', () => {
+
+      const agents = [
+        {
+          resources: [1,2,3]
+        },
+        {
+          resources: [4,5,6]
+        }
+      ];
+
       const expectedResult = {
-        type: CHANGE_PROJECT_NAME,
-        name
+        type: UPDATE_RESOURCES,
+        agents
       };
 
-      expect(changeProjectName(name)).toEqual(expectedResult);
+      expect(updateResources(agents)).toEqual(expectedResult);
+
+
     });
+
   });
 });

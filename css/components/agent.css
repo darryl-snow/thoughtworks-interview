@@ -1,5 +1,11 @@
+/* Agent component
+ *
+ * How each agent item should look.
+*/
+
 .c-agent {
   background: #f9f9f9;
+  height: 100%;
   padding: 0.5rem;
   position: relative;
 }
@@ -52,4 +58,8 @@
   bottom: 0.5rem;
   position: absolute;
   right: 0.5rem;
+}
+
+.c-agent__specify-resources span {
+  pointer-events: none;
 }

@@ -12,6 +12,7 @@
 	fill:	currentColor;
 	height:	1em;
   margin: 0 0.25em;
+  pointer-events: none;
 	vertical-align: middle;
 	width: 1em;
 }
