@@ -1,0 +1,55 @@
+.c-agent {
+  background: #f9f9f9;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.c-agent--building {
+  background: #e5e5e5;
+}
+
+.c-agent__image {
+  float: left;
+  height: 100%;
+  min-height: 3rem;
+  padding-right: 0.25rem;
+  position: relative;
+  text-align: center;
+  width: 20%;
+}
+
+.c-agent__details {
+  float: left;
+  height: 100%;
+  min-height: 3rem;
+  overflow: hidden;
+  padding-left: 0.25rem;
+  width: 70%;
+}
+
+.c-agent__name {
+  border-right: 1px solid #999;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c-agent__name,
+.c-agent__status,
+.c-agent__ip,
+.c-agent__specify-resources {
+  border-right: 1px solid #999;
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c-agent__path {
+  display: inline-block;
+}
+
+.c-agent__deny {
+  bottom: 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+}

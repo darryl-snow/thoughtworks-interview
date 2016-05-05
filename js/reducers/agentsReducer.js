@@ -26,7 +26,6 @@ const initialState = {
       IP: "192.168.1.2",
       path: "/var/lib/cruise-agent",
       type: "physical",
-      deny: true,
       resources: [
         "ubuntu",
         "firefox3",
@@ -40,7 +39,6 @@ const initialState = {
       IP: "192.168.1.3",
       path: "/var/lib/cruise-agent",
       type: "physical",
-      deny: false,
       resources: [
         "ubuntu",
         "firefox3",
@@ -55,7 +53,6 @@ const initialState = {
       IP: "192.168.1.4",
       path: "/var/lib/cruise-agent",
       type: "physical",
-      deny: false,
       resources: [
         "ubuntu",
         "firefox3",
@@ -70,7 +67,6 @@ const initialState = {
       IP: "192.168.1.5",
       path: "/var/lib/cruise-agent",
       type: "physical",
-      deny: true,
       resources: []
     },
     {
@@ -80,7 +76,6 @@ const initialState = {
       IP: "192.168.1.1",
       path: "/var/lib/cruise-agent",
       type: "virtual",
-      deny: true,
       resources: [
         "ubuntu",
         "firefox3",
@@ -95,7 +90,6 @@ const initialState = {
       IP: "192.168.1.6",
       path: "/var/lib/cruise-agent",
       type: "virtual",
-      deny: false,
       resources: [
         "ubuntu",
         "firefox3",

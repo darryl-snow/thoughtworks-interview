@@ -1,0 +1,12 @@
+.c-image {
+  height: auto;
+  left: 50%;
+  max-width: 90%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.c-image--rounded {
+  border-radius: 50%;
+}

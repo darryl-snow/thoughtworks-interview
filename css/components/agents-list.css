@@ -1,0 +1,22 @@
+.c-agents-list {
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+
+  .c-agents-list {
+    float: left;
+    padding-right: 0.5rem;
+    width: 80%;
+  }
+
+}
+
+.c-agents-list__item {
+  border: 1px solid #dddddd;
+  border-radius: 0.3em;
+  min-height: 3rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}

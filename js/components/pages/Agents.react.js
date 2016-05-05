@@ -17,11 +17,11 @@ class Agents extends Component {
     return (
       <div>
         <Filter />
-        <div className="columns">
-          <div className="two-thirds column">
+        <div className="c-agents-page u-clearfix">
+          <div className="c-agents-list">
             <AgentsList />
           </div>
-          <div className="one-third column">
+          <div className="c-agents-sidebar">
             <AgentsSidebar />
           </div>
         </div>

@@ -1,0 +1,16 @@
+.c-agents-sidebar {
+  overflow: hidden;
+  padding-top: 0.5rem;
+  word-wrap: break-word;
+}
+
+@media (min-width: 1024px) {
+
+  .c-agents-sidebar {
+    float: left;
+    padding-left: 0.5rem;
+    padding-top: 0;
+    width: 20%;
+  }
+
+}

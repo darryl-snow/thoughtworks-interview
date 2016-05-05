@@ -27,6 +27,14 @@
   white-space: nowrap;
 }
 
+.u-inline {
+  display: inline;
+}
+
+.u-inline-block {
+  display: inline-block;
+}
+
 .u-inline-list li {
   display: inline-block;
 }

@@ -1,0 +1,15 @@
+.c-button {
+  vertical-align: baseline;
+}
+
+.c-button--plain {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.c-button--plain:active,
+.c-button--plain:focus,
+.c-button--plain:hover {
+  background: none;
+}
